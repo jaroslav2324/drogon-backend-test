@@ -10,6 +10,7 @@ services:
      - POSTGRES_DB=weather_db
     volumes:
      - ./initdb:/docker-entrypoint-initdb.d
+
   pgadmin:
     image: dpage/pgadmin4
     ports:
@@ -21,3 +22,8 @@ services:
      - PGADMIN_DEFAULT_PASSWORD=admin
     volumes:
      - ./pgadmin/servers.json:/pgadmin4/servers.json
+
+  app:
+    image: weather_backend
+    ports:
+      - 82:82
