@@ -1,0 +1,25 @@
+{
+    "db_clients": {
+        "default": {
+            "rdbms": "postgresql",
+            "host": "postgresdb",
+            "port": 5432,
+            "dbname": "weather_db",
+            "user": "admin",
+            "passwd": "admin",
+            "client_encoding": "utf8",
+            "isolation_level": 1,
+            "max_connections": 10
+        }
+    },
+    "listeners": [
+        {
+            "address": "0.0.0.0",
+            "port": 82,
+            "https": false
+        }
+    ],
+    "app": {
+        "number_of_threads": 16
+    }
+}
