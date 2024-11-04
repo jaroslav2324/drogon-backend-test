@@ -24,7 +24,7 @@ services:
      - ./pgadmin/servers.json:/pgadmin4/servers.json
 
   app:
-    image: weather_backend
+    image: jaroslav2324/vislab_test_weather_backend:latest
     ports:
       - 82:82
     depends_on:
