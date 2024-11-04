@@ -27,3 +27,5 @@ services:
     image: weather_backend
     ports:
       - 82:82
+    depends_on:
+      - postgresdb
